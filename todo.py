@@ -98,4 +98,4 @@ if __name__ == "__main__":
 def static_skrar(file):
     return static_file(file, root='./')
 
-run(host='localhost', port=8080, debug=True)
+run(host='0.0.0.0', port=os.environ.get('PORT'))
